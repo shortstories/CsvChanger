@@ -1,0 +1,27 @@
+{{#*inline "stylesheets" }}
+    <link rel="stylesheet" type="text/css" href="/static/css/index.css" />
+{{/inline}}
+
+{{#*inline "javascripts" }}
+    <script type="text/javascript" src="/static/js/index.js"></script>
+{{/inline}}
+
+{{#*inline "content" }}
+    <form class="row form-inline csv-inputs">
+        <div class="form-group">
+            <label for="csv_file">CSV file</label>
+            <input type="file" id="csv_file" />
+        </div>
+        <div class="form-group">
+            <label for="col_size">Col size</label>
+            <input type="text" class="form-control" id="col_size" placeholder="col" />
+        </div>
+    </form>
+    <div class="row">
+        <div class="form-group btn-submit-file-wrap">
+            <button type="submit" class="btn btn-primary btn-submit-file">파일 업로드</button>
+        </div>
+    </div>
+{{/inline}}
+
+{{> partials/base}}

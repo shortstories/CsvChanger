@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{title}}</title>
+{{> partials/global-css}}
+{{#> stylesheets }}
+{{/stylesheets}}
+</head>
+<body>
+<div class="container">
+{{#> header}}
+    <!--{{> partials/navbar}}-->
+{{/header}}
+
+{{#> content}}
+{{/content}}
+
+{{#> footer}}
+{{/footer}}
+</div>
+{{> partials/global-js}}
+{{#> javascripts }}
+{{/javascripts}}
+</body>
+</html>
